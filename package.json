@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@mars/heroku-nextjs-build": "^1.1.0",
+    "cowsay-browser": "^1.1.8",
+    "next": "^2.0.0-beta.32",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "heroku-nextjs-build"
+  },
+   "engines": {
+    "node": "6.9.x"
+  },
+  "cacheDirectories": [
+    "nextjs/node_modules"
+  ]
+}
