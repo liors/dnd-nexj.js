@@ -4,7 +4,9 @@
     "cowsay-browser": "^1.1.8",
     "next": "^2.0.0-beta.32",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-dnd": "^2.2.3",
+    "react-dnd-html5-backend": "^2.2.3"
   },
   "scripts": {
     "dev": "next",
@@ -17,9 +19,5 @@
   },
   "cacheDirectories": [
     "nextjs/node_modules"
-  ],
-  "devDependencies": {
-    "react-dnd": "^2.2.3",
-    "react-dnd-html5-backend": "^2.2.3"
-  }
+  ]
 }
