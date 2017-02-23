@@ -7,11 +7,14 @@ export default class extends React.Component {
       ? { userAgent: req.headers['user-agent'] }
       : { userAgent: navigator.userAgent }
   }
+  onClick () {
+      console.log('i was clicked')
+  }
   render () {
     return (
         <div>
             <Header />
-            <p>Hello World {this.props.userAgent}></p>
+            <p onClick={() => this.onClick() }>Hello World {this.props.userAgent}</p>
         </div>
     )
   }
