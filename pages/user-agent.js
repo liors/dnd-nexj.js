@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import Section from '../components/Section'
 
 export default class extends React.Component {
   static async getInitialProps ({ req }) {
@@ -14,7 +15,7 @@ export default class extends React.Component {
     return (
         <div>
             <Header />
-            <p onClick={() => this.onClick() }>Hello World {this.props.userAgent}</p>
+            <Section><p onClick={() => this.onClick() }>Hello World {this.props.userAgent}</p></Section>
         </div>
     )
   }
